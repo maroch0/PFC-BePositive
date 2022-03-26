@@ -1,5 +1,5 @@
 <template>
-<div class="bg-gradient-to-r from-intenseRose via-middleRose to-ligthRose">
+<div class="h-screen bg-gradient-to-r from-intenseRose via-middleRose to-ligthRose">
   <!-- <nav class="flex flex-col self-center">
     <router-link class="text-lg" :to="{ name: 'login'}">Home</router-link>
     <router-link class="text-lg" :to="{ name: 'register'}">Register</router-link>
