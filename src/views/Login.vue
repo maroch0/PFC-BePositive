@@ -25,7 +25,7 @@
         <slot>
           <button 
             type="button" 
-            class="self-center btn outline outline-ligthRose text-ligthRose w-5/6 text-4xl rounded-full py-2"
+            class="self-center btn outline outline-ligthRose text-ligthRose w-5/6 text-2xl rounded-full py-2"
           >
             Iniciar Sesi&oacute;n
           </button>
