@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex flex-col justify-center items-center space-y-20 pt-12"
+    class="flex flex-col justify-center items-center space-y-28 pt-12"
   >
     <div
       class="flex justify-center"
@@ -12,90 +12,105 @@
       />
     </div>
 
-    <div class="w-2/3 flex flex-col justify-center content-center">
+    <div class="w-2/3 flex flex-col">
       <form 
-        class="text-ligthRose grid grid-cols-2 gap-8"
+        class="text-ligthRose grid grid-cols-2 justify-center gap-8 ml-28"
       >
         <div
-          class="flex flex-col justify-center items-start space-y-8"
+          class="w-3/4 flex flex-col space-y-12"
         >
-          <label 
-            for=""
-            class="text-2xl"
-          >
-            Nombre
-          </label>
-          <input 
-            type="text" 
-            required 
-            class="w-3/4 text-xl bg-transparent border-b border-ligthRose outline-none"
-          />
+          <div class="w-full flex flex-col">
+            <label 
+              for=""
+              class="text-2xl"
+            >
+              Nombre
+            </label>
+            <input 
+              type="text" 
+              required 
+              class="w-full text-xl bg-transparent border-b border-ligthRose outline-none"
+            />
+          </div>
 
-          <label 
-            for=""
-            class="text-2xl"
-          >
-            G&eacute;nero
-          </label>
-          <select 
-            name="genero" id=""
-            class="w-3/4 text-xl bg-transparent border-b border-ligthRose outline-none"
-          >
-            <option value="masculino">Masculino</option>
-            <option value="femenino">Femenino</option>
-            <option value="no-binario">No Binario</option>
-          </select>
+          <div class="w-full flex flex-col">
+            <label 
+              for=""
+              class="text-2xl"
+            >
+              G&eacute;nero
+            </label>
+            <select 
+              name="genero" id=""
+              class="w-full text-xl bg-transparent border-b border-ligthRose outline-none"
+            >
+              <option value="masculino">Masculino</option>
+              <option value="femenino">Femenino</option>
+              <option value="no-binario">No Binario</option>
+            </select>
+          </div>
 
-          <label 
-            for=""
-            class="text-2xl"
-          >
-            Correo Electr&oacute;nico
-          </label>
-          <input 
-            type="email" 
-            required 
-            class="w-3/4 text-xl bg-transparent border-b border-ligthRose outline-none"
-          />
+            <div class="w-full flex flex-col">
+              <label 
+                for=""
+                class="text-2xl"
+              >
+                Correo Electr&oacute;nico
+              </label>
+              <input 
+                type="email" 
+                required 
+                class="w-full text-xl bg-transparent border-b border-ligthRose outline-none"
+              />    
+            </div>
         </div>
 
         <div
-          class="flex flex-col justify-center items-end space-y-8"
+          class="w-3/4 flex flex-col space-y-12"
         >
-          <label 
-            for=""
-            class="text-2xl"
-          >
-            Apellidos
-          </label>
-          <input 
-            type="text" 
-            required 
-            class="w-3/4 text-xl bg-transparent border-b border-ligthRose outline-none"
-          />
+          <div class="w-full flex flex-col">
+            <label 
+              for=""
+              class="text-2xl"
+            >
+              Apellidos
+            </label>
+            <input 
+              type="text" 
+              required 
+              class="w-full text-xl bg-transparent border-b border-ligthRose outline-none"
+            />
+          </div>
 
-          <label for="start">Fecha de nacimiento:</label>
-          <input type="date" id="start" name="trip-start"
-            value="2004-01-01"
-            class="w-3/4 text-xl bg-transparent border-b border-ligthRose outline-none"
-          />
+          <div class="w-full flex flex-col">
+            <label 
+              for="start"
+              class="text-2xl"
+            >Fecha de nacimiento</label>
+            <input type="date" id="start" name="trip-start"
+              value="2004-01-01"
+              class="w-full text-xl bg-transparent border-b border-ligthRose outline-none"
+            />
+          </div>
 
-          <label 
-            for=""
-            class="text-2xl"
-          >
-            Contrase&ntilde;a
-          </label>
-          <input 
-            type="password" 
-            required 
-            class="w-3/4 text-xl bg-transparent border-b border-ligthRose outline-none"
-          />
+          <div class="w-full flex flex-col">
+            <label 
+              for=""
+              class="text-2xl"
+            >
+              Contrase&ntilde;a
+            </label>
+            <input 
+              type="password" 
+              required 
+              class="w-full text-xl bg-transparent border-b border-ligthRose outline-none"
+            />
+          </div>          
         </div>
       </form>
     </div>
   
-    <div class="w-2/3 flex flex-col justify-center items-center">
+    <div class="w-full flex flex-col justify-center items-center">
       <button
         type="button"
         class="btn bg-ligthRose text-intenseRose w-1/4 text-2xl rounded-full py-2"
@@ -120,3 +135,4 @@ export default {
   name: "Register",
 };
 </script>
+
