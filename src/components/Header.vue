@@ -23,7 +23,11 @@
                 </router-link>
 
                 <router-link 
-                    class="text-lg text-intenseRose bg-ligthRose rounded-full py-2 px-4 self-center" 
+                    class="text-lg rounded-full py-2 px-4 self-center"
+                    :class="{
+                        'text-intenseRose bg-ligthRose': path != '/experience',
+                        'text-ligthRose outline outline-ligthRose': path === '/experience'
+                    }"
                     :to="{ name: 'experience'}"
                 >
                     A&ntilde;adir experiencia
@@ -36,5 +40,10 @@
 <script>
 export default {
     name: "Header",
+    data() {
+        return {
+            path: window.location.pathname,
+        };
+    },
 }
 </script>
