@@ -21,7 +21,7 @@
         class="w-2/5"
       />
 
-      <FormLogin>
+      <LoginForm>
         <slot>
           <button 
             type="button" 
@@ -30,18 +30,18 @@
             Iniciar Sesi&oacute;n
           </button>
         </slot>
-      </FormLogin>      
+      </LoginForm>      
     </article>
   </main>
 </template>
 
 <script>
-import FormLogin from '../components/FormLogin.vue'
+import LoginForm from '../components/LoginForm.vue'
 
 export default {
   name: "Login",
   components: {
-    FormLogin,
+    LoginForm,
   }
 };
 </script>
