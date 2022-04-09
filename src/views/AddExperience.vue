@@ -1,9 +1,14 @@
 <template>
-  <h1 class="text-2xl text-rose-900">Add Experience works!</h1>
+  <Header />
 </template>
 
 <script>
+import Header from "../components/Header.vue"
+
 export default {
-    name: 'AddExperience'
+  name: 'AddExperience',
+  components: {
+    Header,
+  }
 }
 </script>

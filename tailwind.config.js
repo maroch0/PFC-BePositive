@@ -6,6 +6,9 @@ module.exports = {
         'intenseRose': '#990D35',
         'middleRose': '#BE123C',
         'ligthRose': '#FFF8E8'
+      },
+      width: {
+        '1/10': '12%',
       }
     },
   },

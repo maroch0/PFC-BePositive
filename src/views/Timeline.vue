@@ -1,9 +1,14 @@
 <template>
-  <h1 class="text-2xl text-rose-900">Timeline works!</h1>
+  <Header />
 </template>
 
 <script>
+import Header from "../components/Header.vue"
+
 export default {
-    name: 'Timeline'
+  name: 'Timeline',
+  components: {
+    Header,
+  }
 }
 </script>

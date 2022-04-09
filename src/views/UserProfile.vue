@@ -1,9 +1,13 @@
 <template>
-  <h1 class="text-2xl text-rose-900">User Profile works!</h1>
+  <Header />
 </template>
 
 <script>
+  import Header from '../components/Header.vue'
 export default {
-    name: 'UserProfile'
+  name: 'UserProfile',
+  components: {
+    Header,
+  }
 }
 </script>
