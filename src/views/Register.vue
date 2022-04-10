@@ -19,7 +19,7 @@
     <div class="w-full flex flex-col justify-center items-center">
       <button
         type="button"
-        class="btn bg-ligthRose text-intenseRose w-1/4 text-2xl rounded-full py-2"
+        class="btn bg-cosmicLatte text-intenseRose w-1/4 text-2xl rounded-full py-2"
       >
         <router-link 
           class="text-2xl" 
@@ -28,7 +28,7 @@
           Registrarse
         </router-link>
       </button>
-      <p class="text-ligthRose">
+      <p class="text-cosmicLatte">
         ¿Ya tienes una cuenta?
         <router-link 
           class="text-lg font-bold" 

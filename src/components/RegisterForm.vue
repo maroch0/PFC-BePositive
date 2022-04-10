@@ -1,6 +1,6 @@
 <template>
   <form 
-    class="text-ligthRose grid grid-cols-2 justify-center gap-8 ml-28"
+    class="text-cosmicLatte grid grid-cols-2 justify-center gap-8 ml-28"
   >
     <div
       class="w-3/4 flex flex-col space-y-12"
@@ -16,7 +16,7 @@
           type="text" 
           id="name"
           required 
-          class="w-full text-xl px-1 bg-transparent border-b border-ligthRose outline-none"
+          class="w-full text-xl px-1 bg-transparent border-b border-cosmicLatte outline-none"
         />
       </div>
 
@@ -29,7 +29,7 @@
         </label>
         <select 
           name="gender" id="gender"
-          class="w-full text-xl bg-transparent border-b border-ligthRose outline-none"
+          class="w-full text-xl bg-transparent border-b border-cosmicLatte outline-none"
         >
           <option value="masculino">Masculino</option>
           <option value="femenino">Femenino</option>
@@ -48,7 +48,7 @@
           type="email"
           id="email"
           required 
-          class="w-full text-xl px-1 bg-transparent border-b border-ligthRose outline-none"
+          class="w-full text-xl px-1 bg-transparent border-b border-cosmicLatte outline-none"
         />    
       </div>
     </div>
@@ -67,7 +67,7 @@
           type="text" 
           id="lastname"
           required 
-          class="w-full text-xl px-1 bg-transparent border-b border-ligthRose outline-none"
+          class="w-full text-xl px-1 bg-transparent border-b border-cosmicLatte outline-none"
         />
       </div>
 
@@ -80,7 +80,7 @@
         </label>
         <input type="date" id="birthDate" name="trip-start"
           value="2004-01-01"
-          class="w-full text-xl bg-transparent border-b border-ligthRose outline-none"
+          class="w-full text-xl bg-transparent border-b border-cosmicLatte outline-none"
         />
       </div>
 
@@ -95,7 +95,7 @@
           type="password" 
           id="pass"
           required 
-          class="w-full text-xl px-1 bg-transparent border-b border-ligthRose outline-none"
+          class="w-full text-xl px-1 bg-transparent border-b border-cosmicLatte outline-none"
         />
       </div>          
     </div>

@@ -25,7 +25,7 @@
         <slot>
           <button 
             type="button" 
-            class="self-center btn outline outline-ligthRose text-ligthRose w-5/6 rounded-full py-2"
+            class="self-center btn outline outline-cosmicLatte text-cosmicLatte w-5/6 rounded-full py-2"
           >
             <router-link 
               class="text-xl font-bold" 

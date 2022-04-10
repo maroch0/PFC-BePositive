@@ -1,20 +1,21 @@
 <template>
   <form
-    class="w-2/5 flex flex-col space-y-14 text-ligthRose"
+    class="w-2/5 flex flex-col space-y-14 text-cosmicLatte"
   >
     <div
       class="flex flex-col space-y-4"
     >
       <label 
-        for=""
+        for="email"
         class="text-2xl"
       >
         Correo Electr&oacute;nico
       </label>
       <input 
         type="email" 
+        id="email"
         required 
-        class="text-xl px-1 bg-transparent border-b border-ligthRose outline-none"
+        class="text-xl px-1 bg-transparent border-b border-cosmicLatte outline-none"
       />
     </div>
 
@@ -22,15 +23,16 @@
       class="flex flex-col space-y-4"
     >
       <label 
-        for=""
+        for="pass"
         class="text-2xl"
       >
         Contrase&ntilde;a
       </label>
       <input 
         type="password" 
+        id="pass"
         required 
-        class="text-xl px-1 bg-transparent border-b border-ligthRose outline-none"
+        class="text-xl px-1 bg-transparent border-b border-cosmicLatte outline-none"
       />
     </div>
 
@@ -41,7 +43,7 @@
       <slot />
 
       <p
-        class="text-ligthRose"
+        class="text-cosmicLatte"
       >
         ¿No tienes una cuenta?
         <router-link 
