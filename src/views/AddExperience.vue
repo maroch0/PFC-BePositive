@@ -23,8 +23,7 @@
     >
       A&ntilde;ade una imagen de tu experiencia
     </label>
-    <input @change="selectedImage" type="file" accept="image/*" size="60" class="">
-    <img id="selectedImage" alt="">
+    <input id="image" type="file" accept="image/*" class="hidden">
     
     <RateExperience />
 
@@ -47,29 +46,5 @@ export default {
     Header,
     RateExperience,
   },
-  data() {
-    return {
-      // selectedImage: '',
-    };
-  },
-  /* watcher: {
-    image() {
-      if (this.image.length) {
-        return this.selectedImage = window.URL.createObjectURL(this.image);
-      }
-    }
-  } */
-  methods: {
-    /* showImage() {
-      const file = document.getElementById('image');
-      let img = document.getElementById('selectedImage');
-
-      console.log(file);
-      file.addEventListener("change", () => {
-        const urlImage = URL.createObjectURL(file);
-        img.src = urlImage;
-      })
-    } */
-  }
 }
 </script>
