@@ -1,86 +1,70 @@
 <template>
-    <div class="flex space-x-4">
-         <span
+    <div class="flex justify-center items-center space-x-4">
+        <span
             class="text-xl"
-        >Califica tu experiencia</span>
-<!--         <label for="plus1">
-            <svg 
-            class="w-8 self-center" 
-            :class="[
-                checked ? 'fill-cosmicLatte' : 'fill-transparent stroke-cosmicLatte'
-            ]"
-            xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
         >
-            <path d="M24 10h-10v-10h-4v10h-10v4h10v10h4v-10h10z"/>
-        </svg>
-        </label>
-        <input type="radio" name="rated" id="plus1" class="hidden" value="1"> -->
-
-        <svg 
-            class="w-8 self-center" 
-            :class="[
-                fillIcon ? 'fill-cosmicLatte' : 'fill-transparent stroke-cosmicLatte'
-            ]"
-            @click="selectedIcon"
-            xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-        >
-            <path d="M24 10h-10v-10h-4v10h-10v4h10v10h4v-10h10z"/>
-        </svg>
-        <svg 
-            class="w-8 self-center" 
-            :class="[
-                fillIcon ? 'fill-cosmicLatte' : 'fill-transparent stroke-cosmicLatte'
-            ]"
-            @click="selectedIcon"
-            xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-        >
-            <path d="M24 10h-10v-10h-4v10h-10v4h10v10h4v-10h10z"/>
-        </svg>
-        <svg 
-            class="w-8 self-center fill-transparent stroke-cosmicLatte" 
-            :class="[
-                fillIcon ? 'fill-cosmicLatte' : 'fill-transparent stroke-cosmicLatte'
-            ]"
-            @click="selectedIcon"
-            xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-        >
-            <path d="M24 10h-10v-10h-4v10h-10v4h10v10h4v-10h10z"/>
-        </svg>
-        <svg 
-            class="w-8 self-center fill-transparent stroke-cosmicLatte" 
-            :class="[
-                fillIcon ? 'fill-cosmicLatte' : 'fill-transparent stroke-cosmicLatte'
-            ]"
-            @click="selectedIcon"
-            xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-        >
-            <path d="M24 10h-10v-10h-4v10h-10v4h10v10h4v-10h10z"/>
-        </svg>
-        <svg 
-            class="w-8 self-center fill-transparent stroke-cosmicLatte" 
-            :class="[
-                fillIcon ? 'fill-cosmicLatte' : 'fill-transparent stroke-cosmicLatte'
-            ]"
-            @click="selectedIcon"
-            xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-        >
-            <path d="M24 10h-10v-10h-4v10h-10v4h10v10h4v-10h10z"/>
-        </svg>
+            Califica tu experiencia
+        </span>
+        
+        <div class="rate">
+            <input type="radio" id="star1" name="rate" value="1" />
+            <label for="star1" title="text">1 stars</label>
+    
+            <input type="radio" id="star2" name="rate" value="2" />
+            <label for="star2" title="text">2 stars</label>
+    
+            <input type="radio" id="star3" name="rate" value="3" />
+            <label for="star3" title="text">3 stars</label>
+    
+            <input type="radio" id="star4" name="rate" value="4" />
+            <label for="star4" title="text">4 stars</label>
+    
+            <input type="radio" id="star5" name="rate" value="5" />
+            <label for="star5" title="text">5 star</label>
+        </div>
     </div>
 </template>
 
 <script>
 export default {
     name: "RateExperience",
-    data() {
-        return {
-            fillIcon: false,
-        };
-    },
-    methods: {
-        selectedIcon() {
-            return this.fillIcon = !this.fillIcon;
-        }
-    }
 }
 </script>
+
+<style scoped>
+.rate {
+    float: left;
+    height: 46px;
+    padding: 0 10px;
+}
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    color:#ccc;
+}
+.rate:not(:checked) > label:before {
+    content: '★ ';
+}
+.rate > input:checked ~ label {
+    color: #FFF8E8;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #FFF8E8;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #FFF8E8;
+}
+</style>
