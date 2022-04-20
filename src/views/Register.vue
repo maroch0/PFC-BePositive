@@ -1,8 +1,8 @@
 <template>
-  <div
+  <main
     class="flex flex-col justify-center items-center space-y-28 pt-12"
   >
-    <div
+    <aside
       class="flex justify-center"
     >
       <img
@@ -10,7 +10,7 @@
         alt="BePositive logo"
         class="w-3/5"
       />
-    </div>
+    </aside>
 
     <div class="w-2/3 flex flex-col">
       <RegisterForm />
@@ -38,7 +38,7 @@
         </router-link>
       </p>
     </div>
-  </div>
+  </main>
 </template>
 
 <script>
