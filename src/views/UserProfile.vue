@@ -1,24 +1,17 @@
 <template>
   <Header />
   <main
-    class="flex flex-col justify-center items-center"
+    class="flex flex-col justify-center items-center space-y-6"
   >
     <aside>
-      <div
-        class="flex justify-center items-center w-44 h-44 overflow-hidden rounded-fifty outline outline-4 outline-cosmicLatte"
-      >
-        <img 
-          src="src/assets/profile-img.png"
-          class="object-center"
-        >
-      </div>
+      <UpdateImage />
     </aside>
     <form
-      class="text-cosmicLatte flex flex-col justify-center gap-4"
+      class="w-2/6 text-cosmicLatte flex flex-col justify-center space-y-4"
     >
       <label 
           for="name"
-          class="text-2xl"
+          class="text-xl"
         >
           Nombre
         </label>
@@ -26,12 +19,12 @@
           type="text" 
           id="name"
           required 
-          class="w-full text-xl px-1 bg-transparent border-b border-cosmicLatte outline-none"
+          class="w-full text-xl px-1 bg-transparent border-b-2 border-cosmicLatte outline-none"
         />
 
         <label 
           for="lastname"
-          class="text-2xl"
+          class="text-xl"
         >
           Apellidos
         </label>
@@ -39,12 +32,12 @@
           type="text" 
           id="lastname"
           required 
-          class="w-full text-xl px-1 bg-transparent border-b border-cosmicLatte outline-none"
+          class="w-full text-xl px-1 bg-transparent border-b-2 border-cosmicLatte outline-none"
         />
 
         <label 
           for="email"
-          class="text-2xl"
+          class="text-xl"
         >
           Correo Electr&oacute;nico
         </label>
@@ -52,12 +45,12 @@
           type="email"
           id="email"
           required 
-          class="w-full text-xl px-1 bg-transparent border-b border-cosmicLatte outline-none"
+          class="w-full text-xl px-1 bg-transparent border-b-2 border-cosmicLatte outline-none"
         />  
 
          <label 
           for="pass"
-          class="text-2xl"
+          class="text-xl"
         >
           Contrase&ntilde;a
         </label>
@@ -65,7 +58,7 @@
           type="password" 
           id="pass"
           required 
-          class="w-full text-xl px-1 bg-transparent border-b border-cosmicLatte outline-none"
+          class="w-full text-xl px-1 bg-transparent border-b-2 border-cosmicLatte outline-none"
         />
     </form>
   </main>
@@ -73,10 +66,12 @@
 
 <script>
   import Header from '../components/Header.vue'
+  import UpdateImage from '../components/UpdateImage.vue'
 export default {
   name: 'UserProfile',
   components: {
     Header,
+    UpdateImage,
   }
 }
 </script>
