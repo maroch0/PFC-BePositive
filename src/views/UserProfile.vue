@@ -1,77 +1,33 @@
 <template>
   <Header />
   <main
-    class="flex flex-col justify-center items-center space-y-6"
+    class="flex flex-col justify-center items-center space-y-8"
   >
     <aside>
       <UpdateImage />
     </aside>
-    <form
-      class="w-2/6 text-cosmicLatte flex flex-col justify-center space-y-4"
+    
+    <UpdateProfileForm />
+
+    <button 
+      type="button"
+      class="w-3/12 self-center btn bg-cosmicLatte text-ruby rounded-full py-2 text-xl"
     >
-      <label 
-          for="name"
-          class="text-xl"
-        >
-          Nombre
-        </label>
-        <input 
-          type="text" 
-          id="name"
-          required 
-          class="w-full text-xl px-1 bg-transparent border-b-2 border-cosmicLatte outline-none"
-        />
-
-        <label 
-          for="lastname"
-          class="text-xl"
-        >
-          Apellidos
-        </label>
-        <input 
-          type="text" 
-          id="lastname"
-          required 
-          class="w-full text-xl px-1 bg-transparent border-b-2 border-cosmicLatte outline-none"
-        />
-
-        <label 
-          for="email"
-          class="text-xl"
-        >
-          Correo Electr&oacute;nico
-        </label>
-        <input 
-          type="email"
-          id="email"
-          required 
-          class="w-full text-xl px-1 bg-transparent border-b-2 border-cosmicLatte outline-none"
-        />  
-
-         <label 
-          for="pass"
-          class="text-xl"
-        >
-          Contrase&ntilde;a
-        </label>
-        <input 
-          type="password" 
-          id="pass"
-          required 
-          class="w-full text-xl px-1 bg-transparent border-b-2 border-cosmicLatte outline-none"
-        />
-    </form>
+      Actualizar Perfil
+    </button>
   </main>
 </template>
 
 <script>
-  import Header from '../components/Header.vue'
-  import UpdateImage from '../components/UpdateImage.vue'
+import Header from '../components/Header.vue'
+import UpdateImage from '../components/UpdateImage.vue'
+import UpdateProfileForm from '../components/UpdateProfileForm.vue'
 export default {
   name: 'UserProfile',
   components: {
     Header,
     UpdateImage,
+    UpdateProfileForm,
   }
 }
 </script>
