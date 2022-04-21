@@ -13,6 +13,9 @@ module.exports = {
       },
       width: {
         '1/10': '12%',
+      },
+      borderRadius: {
+        'fifty': '50%',
       }
     },
   },

@@ -4,11 +4,14 @@
     class="flex flex-col justify-center items-center"
   >
     <aside>
-      <img 
-        src="src/assets/profile-img.png"
-        class="w-4/6 object-none outline outline-4 outline-cosmicLatte"
-        style="border-radius: 100%"
+      <div
+        class="flex justify-center items-center w-44 h-44 overflow-hidden rounded-fifty outline outline-4 outline-cosmicLatte"
       >
+        <img 
+          src="src/assets/profile-img.png"
+          class="object-center"
+        >
+      </div>
     </aside>
     <form
       class="text-cosmicLatte flex flex-col justify-center gap-4"
