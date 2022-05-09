@@ -43,15 +43,15 @@ export default {
 }
 .rate:not(:checked) > label {
     float:right;
-    width:1em;
+    width:.94em;
     overflow:hidden;
     white-space:nowrap;
     cursor:pointer;
-    font-size:30px;
-    color:#ccc;
+    font-size:34px;
+    color:#d1b6bd;
 }
 .rate:not(:checked) > label:before {
-    content: '★ ';
+    content: '+ ';
 }
 .rate > input:checked ~ label {
     color: #FFF8E8;    
