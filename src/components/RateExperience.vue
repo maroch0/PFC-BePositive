@@ -6,7 +6,7 @@
             Califica tu experiencia
         </span>
         
-        <div class="rate">
+        <div class="rate flex justify-center items-center">
             <input type="radio" id="star1" name="rate" value="1" />
             <label for="star1">1 stars</label>
     
