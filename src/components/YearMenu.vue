@@ -1,58 +1,43 @@
 <template>
-  <div class="flex flex-col md:grid grid-cols-9 mx-auto p-2 text-cosmicLatte">
-    <!-- left -->
-    <div class="flex flex-row-reverse md:contents">
-      <div class="col-start-1 col-end-5 p-4 rounded-xl ml-auto">
-        <h3 class="text-lg">2022</h3>
-      </div>
-      <div class="col-start-5 col-end-6 md:mx-auto relative mr-10">
-        <div class="h-full w-6 flex items-center justify-center">
-          <div class="h-full w-0.5 bg-cosmicLatte pointer-events-none"></div>
-        </div>
-      </div>
+<div class="flex flex-col relative border-r border-cosmicLatte dark:border-cosmicLatte">
+    <!-- Raya -->                
+    <div class="mb-4 mr-6">
+        <time class="w-full text-xl text-cosmicLatte dark:text-cosmicLatte">2022</time>
     </div>
-    <!-- left -->
-    <div class="flex flex-row-reverse md:contents">
-      <div class="col-start-1 col-end-5 p-4 rounded-xl ml-auto">
-        <h3 class="text-lg">2021</h3>
-      </div>
-      <div class="col-start-5 col-end-6 md:mx-auto relative mr-10">
-        <div class="h-full w-6 flex items-center justify-center">
-          <div class="h-full w-0.5 bg-cosmicLatte pointer-events-none"></div>
-        </div>
-      </div>
+
+    <!-- Raya -->                
+    <div class="mb-4 mr-6">
+        <time class="w-full text-xl text-cosmicLatte dark:text-cosmicLatte">2021</time>
     </div>
-    <!-- left -->
-    <div class="flex flex-row-reverse md:contents">
-      <div class="col-start-1 col-end-5 p-4 rounded-xl ml-auto">
-        <h3 class="font-semibold text-2xl">2020</h3>
-      </div>
-      <div class="col-start-5 col-end-6 md:mx-auto relative mr-10">
-        <div class="h-full w-6 flex items-center justify-center">
-          <div class="h-full w-0.5 bg-cosmicLatte pointer-events-none"></div>
-        </div>
-        <!-- dot -->
-        <div
-          class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-cosmicLatte shadow"
-        ></div>
-      </div>
+
+    <!-- Raya -->                
+    <div class="mb-4 mr-6">
+        <!-- Bolita -->
+        <div class="absolute w-4 h-4 bg-cosmicLatte rounded-full mt-2 -right-2 border border-cosmicLatte dark:border-cosmicLatte dark:bg-cosmicLatte"></div>
+        <time class="w-full text-3xl text-cosmicLatte dark:text-cosmicLatte">2020</time>
     </div>
-    <!-- left -->
-    <div class="flex flex-row-reverse md:contents">
-      <div class="col-start-1 col-end-5 p-4 rounded-xl ml-auto">
-        <h3 class="text-lg">2019</h3>
-      </div>
-      <div class="col-start-5 col-end-6 md:mx-auto relative mr-10">
-        <div class="h-full w-6 flex items-center justify-center">
-          <div class="h-full w-0.5 bg-cosmicLatte pointer-events-none"></div>
-        </div>
-      </div>
+
+    <!-- Raya -->                
+    <div class="mb-4 mr-6">
+        <time class="w-full text-xl text-cosmicLatte dark:text-cosmicLatte">2019</time>
     </div>
-  </div>
+
+    <!-- Raya -->                
+    <div class="mb-4 mr-6">
+       <time class="w-full text-xl text-cosmicLatte dark:text-cosmicLatte">2018</time>
+    </div>
+</div>
+    
 </template>
 
 <script>
 export default {
-    name: "YearMenu"
+  name: "YearMenu",
+  data() {
+    return {
+      years: [2022, 2021, 2020, 2019, 2018],
+      selected: false,
+    };
+  },
 };
 </script>
