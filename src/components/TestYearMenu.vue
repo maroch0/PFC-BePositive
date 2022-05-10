@@ -7,18 +7,22 @@
             <div
                 v-if="selected && yearSelect === year"
             >
-                <div class="absolute w-3 h-3 bg-cosmicLatte rounded-full mt-1.5 -right-1.5 border border-cosmicLatte dark:border-cosmicLatte dark:bg-cosmicLatte"></div>
+                <div class="absolute w-4 h-4 bg-cosmicLatte rounded-full mt-2 -right-2 border border-cosmicLatte dark:border-cosmicLatte dark:bg-cosmicLatte"></div>
             </div>
             <button 
                 type="button"
-                class="w-full text-xl text-cosmicLatte dark:text-cosmicLatte"
-                @click="yearSelected"
+                class="w-full"
+                @click="yearSelected(index)"
             >
-                <p>
+                <p 
+                    class="text-xl text-cosmicLatte dark:text-cosmicLatte"
+                    :class="{
+                        'text-3xl':  yearSelect === year
+                    }"
+                >
                     {{ year }}
                 </p>
             </button>
-            {{ selected }}
         </div>
     </div>
 </div>
@@ -27,22 +31,22 @@
 
 <script>
 export default {
-  name: "TestYearMenu",
-  data() {
-    return {
-      years: [2022, 2021, 2020, 2019, 2018],
-      selected: false,
-      yearSelect: String,
-    };
-  },
-  computed: {
-      
-  },
-  methods: {
-      yearSelected() {
-          this.year = this.yearSelect;
-          return this.selected = true;
-      }
-  }
+    name: "TestYearMenu",
+    data() {
+        return {
+            years: [2022, 2021, 2020, 2019, 2018],
+            selected: false,
+            yearSelect: {
+                type: String,
+                default: '2022',
+            }
+        };
+    },
+    methods: {
+        yearSelected(index) {
+            this.yearSelect = this.years[index];
+            this.selected = true;
+        },
+    },
 };
 </script>
