@@ -1,6 +1,6 @@
 <template>
   <main
-    class="flex flex-col justify-center items-center space-y-28 pt-12"
+    class="flex flex-col justify-center items-center space-y-28 md:space-y-20 pt-12"
   >
     <aside
       class="flex justify-center"
@@ -8,7 +8,7 @@
       <img
         src="src/assets/logo-bepositive.png"
         alt="BePositive logo"
-        class="w-3/5"
+        class="w-3/5 md:w-2/4"
       />
     </aside>
 
