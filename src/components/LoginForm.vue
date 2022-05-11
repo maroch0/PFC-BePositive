@@ -3,7 +3,7 @@
     class="w-2/5 flex flex-col space-y-14 text-cosmicLatte"
   >
     <div
-      class="flex flex-col space-y-4"
+      class="md:w-full flex flex-col space-y-4"
     >
       <label 
         for="email"
@@ -20,7 +20,7 @@
     </div>
 
     <div
-      class="flex flex-col space-y-4"
+      class="md:w-full flex flex-col space-y-4"
     >
       <label 
         for="pass"

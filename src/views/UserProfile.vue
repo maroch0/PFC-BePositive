@@ -11,7 +11,7 @@
 
     <button 
       type="button"
-      class="w-3/12 self-center btn bg-cosmicLatte text-ruby rounded-full py-2 text-xl"
+      class="w-3/12 self-center btn bg-cosmicLatte text-ruby rounded-full py-2 text-xl md:text-lg"
     >
       Actualizar Perfil
     </button>

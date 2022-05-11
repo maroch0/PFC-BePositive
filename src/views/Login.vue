@@ -8,7 +8,7 @@
       <img
         src="src/assets/timeline-login.png"
         alt="imagen del timeline de la app"
-        class="w-full pl-12"
+        class="w-full md:w-11/12 pl-12"
       />
     </aside>
 
@@ -18,14 +18,14 @@
       <img
         src="src/assets/logo-bepositive.png"
         alt="BePositive logo"
-        class="w-2/5"
+        class="w-2/5 md:w-2/6"
       />
 
       <LoginForm>
         <slot>
           <button 
             type="button" 
-            class="self-center btn outline outline-cosmicLatte text-cosmicLatte w-5/6 rounded-full py-2"
+            class="self-center btn outline outline-cosmicLatte text-cosmicLatte w-5/6 md:w-full rounded-full py-2"
           >
             <router-link 
               class="text-xl font-bold" 

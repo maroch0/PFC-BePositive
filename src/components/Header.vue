@@ -9,21 +9,21 @@
 
             <nav class="flex space-x-6">
                 <router-link 
-                    class="text-lg text-cosmicLatte self-center" 
+                    class="text-lg md:text-base text-cosmicLatte self-center" 
                     :to="{ name: 'user'}"
                 >
                     Hola, Nombre
                 </router-link>
 
                 <router-link 
-                    class="text-lg text-cosmicLatte self-center" 
+                    class="text-lg md:text-base text-cosmicLatte self-center" 
                     :to="{ name: 'timeline'}"
                 >
                     Timeline
                 </router-link>
 
                 <router-link 
-                    class="text-lg rounded-full py-2 px-4 self-center"
+                    class="text-lg md:text-base rounded-full py-2 px-4 self-center"
                     :class="{
                         'text-ruby bg-cosmicLatte': path !== '/experience',
                         'text-cosmicLatte outline outline-cosmicLatte': path === '/experience'
