@@ -1,6 +1,6 @@
 <template>
     <form
-      class="w-3/12 text-cosmicLatte flex flex-col justify-center space-y-4 md:space-y-2"
+      class="w-3/12 sm:w-6/12 text-cosmicLatte flex flex-col justify-center space-y-4 md:space-y-2"
     >
         <label 
           for="name"

@@ -1,6 +1,6 @@
 <template>
   <form 
-    class="text-cosmicLatte grid grid-cols-2 justify-center gap-8 ml-28"
+    class="sm:w-full text-cosmicLatte grid grid-cols-2 justify-center gap-8 ml-28 sm:ml-10"
   >
     <div
       class="w-3/4 flex flex-col space-y-12"

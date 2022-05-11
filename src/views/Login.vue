@@ -3,7 +3,7 @@
     class="flex h-full"
   >
     <aside
-      class="w-2/4 flex items-center"
+      class="w-2/4 sm:hidden flex items-center"
     >
       <img
         src="src/assets/timeline-login.png"
@@ -13,7 +13,7 @@
     </aside>
 
     <article
-      class="w-2/4 flex flex-col justify-center items-center space-y-28"
+      class="w-2/4 sm:w-full flex flex-col justify-center items-center space-y-28"
     >
       <img
         src="src/assets/logo-bepositive.png"

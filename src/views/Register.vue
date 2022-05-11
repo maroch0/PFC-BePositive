@@ -19,7 +19,7 @@
     <div class="w-full flex flex-col justify-center items-center">
       <button
         type="button"
-        class="btn bg-cosmicLatte text-intenseRose w-1/4 text-2xl rounded-full py-2"
+        class="btn bg-cosmicLatte text-intenseRose w-1/4 sm:w-2/6 text-2xl rounded-full py-2"
       >
         <router-link 
           class="text-2xl" 

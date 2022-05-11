@@ -1,26 +1,26 @@
 <template>
     <div class="flex justify-center items-center space-x-4">
         <span
-            class="text-xl"
+            class="text-xl sm:text-base"
         >
             Califica tu experiencia
         </span>
         
         <div class="rate flex flex-row-reverse justify-center items-center">
             <input type="radio" id="star1" name="rate" value="1" />
-            <label class="w-8 md:w-7" for="star1">1 star</label>
+            <label class="w-8 md:w-7 sm:w-.5" for="star1">1 star</label>
     
             <input type="radio" id="star2" name="rate" value="2" />
-            <label class="w-8 md:w-7" for="star2">2 stars</label>
+            <label class="w-8 md:w-7 sm:w-.5" for="star2">2 stars</label>
     
             <input type="radio" id="star3" name="rate" value="3" />
-            <label class="w-8 md:w-7" for="star3">3 stars</label>
+            <label class="w-8 md:w-7 sm:w-.5" for="star3">3 stars</label>
     
             <input type="radio" id="star4" name="rate" value="4" />
-            <label class="w-8 md:w-7" for="star4">4 stars</label>
+            <label class="w-8 md:w-7 sm:w-.5" for="star4">4 stars</label>
     
             <input type="radio" id="star5" name="rate" value="5" />
-            <label class="w-8 md:w-7" for="star5">5 star</label>
+            <label class="w-8 md:w-7 sm:w-.5" for="star5">5 star</label>
         </div>
     </div>
 </template>
