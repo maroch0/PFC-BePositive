@@ -3,7 +3,7 @@
         class="flex flex-col justify-center items-center space-y-4"
     >
         <div
-            class="flex justify-center items-center w-44 h-44 overflow-hidden rounded-fifty outline outline-4 outline-cosmicLatte"
+            class="flex justify-center items-center w-44 md:w-38 h-44 md:h-38 overflow-hidden rounded-fifty outline outline-4 outline-cosmicLatte"
         >
             <img 
             src="src/assets/profile-img.png"
@@ -12,7 +12,7 @@
         </div>
 
         <label for="image"
-            class="w-full text-center text-lg text-cosmicLatte cursor-pointer"
+            class="w-full text-center text-lg md:text-base text-cosmicLatte cursor-pointer"
         >
             Actualizar fotograf&iacute;a
         </label>
