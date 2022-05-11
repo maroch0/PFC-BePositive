@@ -2,11 +2,11 @@
   <Header />
 
   <section class="flex h-5/6 overflow-hidden">
-    <aside class="w-2/6 sm:w-1/6 flex justify-center items-center">
+    <aside class="w-2/6 flex justify-center items-center">
       <TestYearMenu />
     </aside>
 
-    <article class="w-4/6 sm:w-5/6 h-full overflow-auto">
+    <article class="w-4/6 h-full overflow-auto">
       <TimelineItem />
     </article>
   </section>

@@ -19,7 +19,7 @@
     </div>
 
     <label for="image"
-      class="w-3/12 sm:w-6/12 text-center py-2 outline outline-cosmicLatte rounded-full cursor-pointer"
+      class="w-3/12 text-center py-2 outline outline-cosmicLatte rounded-full cursor-pointer"
     >
       A&ntilde;ade una imagen de tu experiencia
     </label>
@@ -29,7 +29,7 @@
 
     <button 
       type="button"
-      class="self-center btn bg-cosmicLatte text-ruby w-3/12 sm:w-6/12 rounded-full py-2 text-lg"
+      class="self-center btn bg-cosmicLatte text-ruby w-3/12 rounded-full py-2 text-lg"
     >
       Conservar experiencia
     </button>
