@@ -17,56 +17,14 @@
 </template>
 
 <script>
-const experiences = [
-        {
-          date: "01-01-2020",
-          description: "Un nuevo año me espera."
-        },
-        {
-          date: "13-02-2020",
-          description: "Fiesta de empresa."
-        },
-        {
-          date: "01-03-2020",
-          description: "He hecho un nuevo amigo."
-        },
-        {
-          date: "19-04-2020",
-          description: "Me han ascendido en el trabajo."
-        },
-        {
-          date: "27-05-2020",
-          description: "He descubierto un sitio muy bonito en la montaña."
-        },
-        {
-          date: "14-06-2020",
-          description: "Primeras palabras de Mateo."
-        },
-        {
-          date: "24-07-2020",
-          description: "Me siento genial."
-        },
-        {
-          date: "08-08-2020",
-          description: "Celebramos 10 años de matrimonio"
-        },
-        {
-          date: "26-10-2020",
-          description: "Fin de semana de spa con las amigas"
-        },
-        {
-          date: "03-11-2020",
-          description: "Nos mudamos a la ciudad"
-        },
-      ];
-
 export default {
   name: "TimelineItem",
   data() {
     return {
-      data: experiences
+      //data: experiences
     };
   },
+  props: ['data'],
 };
 </script>
 
@@ -89,7 +47,7 @@ export default {
 }
 
 .timeline-item {
-  padding: 10px 80px;
+  padding: 10px 20px;
   position: relative;
   width: 50%;
 }
@@ -97,23 +55,24 @@ export default {
 .timeline-item::after {
   content: "";
   position: absolute;
-  /* dot size */
+/* dot size */
   width: 20px;
   height: 20px;
-
-  right: -10.2px;
+/* vertical position dot par */
+  right: -9px;
+  
   background-color: #FFF8E8;
-  top: 28px;
+  top: 35px;
   border-radius: 50%;
   z-index: 1;
 }
-
+/* vertical position dot par */
 .left {
   left: 0;
 }
-/* dot horizontal position */
+/* vertical position dot impar */
 .right {
-  left: 50%;
+  left: 49.9%;
 }
 
 .right::after {
@@ -121,7 +80,7 @@ export default {
 }
 
 .content {
-  padding: 20px 30px;
+  padding: 20px 40px;
 }
 
 /* Responsive on screens less than 600px wide */

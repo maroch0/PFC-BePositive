@@ -31,11 +31,11 @@ export default {
   name: 'YearMenu',
   data() {
     return {
-      years: [2022, 2021, 2020, 2019, 2018],
       yearSelect: undefined,
       selected: false
     }
   },
+  props: ['years'],
   created() {
     this.yearSelect = this.years[0]
     this.selected = true
