@@ -44,6 +44,7 @@ export default {
     yearSelected(index) {
       this.yearSelect = this.years[index]
       this.selected = true
+      this.$emit('changeYear', this.yearSelect)
     }
   }
 }
