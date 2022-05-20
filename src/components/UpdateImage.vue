@@ -1,31 +1,48 @@
 <template>
+  <div class="flex flex-col justify-center items-center space-y-4">
+    <!-- Relacionar la imagen que se añade en el input con la que se muestra -->
     <div
-        class="flex flex-col justify-center items-center space-y-4"
+      class="flex justify-center items-center w-44 md:w-38 h-44 md:h-38 overflow-hidden rounded-fifty outline outline-4 outline-cosmicLatte"
     >
-        <div
-            class="flex justify-center items-center w-44 md:w-38 h-44 md:h-38 overflow-hidden rounded-fifty outline outline-4 outline-cosmicLatte"
-        >
-            <img 
-            src="src/assets/profile-img.png"
-            class="object-center"
-            >     
-        </div>
-
-        <label for="image"
-            class="w-full text-center text-lg md:text-base text-cosmicLatte cursor-pointer"
-        >
-            Actualizar fotograf&iacute;a
-        </label>
-        <input id="image" type="file" accept="image/*" class="hidden"> 
+      <img :src="image" class="object-center" />
     </div>
+
+    <label
+      for="image"
+      class="w-full text-center text-lg md:text-base text-cosmicLatte cursor-pointer"
+    >
+      Actualizar fotograf&iacute;a
+    </label>
+    <input
+      id="image"
+      type="file"
+      accept="image/*"
+      class="hidden"
+      @input="uploadImage"
+    />
+  </div>
 </template>
 
 <script>
 export default {
-    name: 'UpdateImage',
-}
+  name: "UpdateImage",
+  data() {
+    return {
+      image: "src/assets/profile-img.png",
+    };
+  },
+  methods: {
+    uploadImage(event) {
+      const file = event.target.files[0];
+      const reader = new FileReader();
+      reader.onload = (event) => {
+        this.image = event.target.result;
+      };
+
+      reader.readAsDataURL(file);
+    },
+  },
+};
 </script>
 
-<style>
-
-</style>
+<style></style>
