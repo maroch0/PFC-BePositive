@@ -1,33 +1,42 @@
 <template>
   <Header />
-  <form 
+  <form
     class="w-full h-5/6 text-cosmicLatte flex flex-col justify-center items-center pb-56 space-y-6"
   >
-    <div
-      class="flex flex-col space-y-4"
-    >
-      <label 
-        class="text-lg"
-        for="experience"
-      >
-        Mi experiencia
-      </label>
-      <textarea 
-        id="experience" cols="36" rows="4"
+    <div class="flex flex-col space-y-4">
+      <label class="text-lg" for="experience"> Mi experiencia </label>
+      <textarea
+        id="experience"
+        cols="36"
+        rows="4"
         class="text-lg px-1 bg-transparent border-b border-cosmicLatte outline-none resize-none"
       />
     </div>
 
-    <label for="image"
+    <label
+      for="photo"
       class="w-3/12 text-center py-2 outline outline-cosmicLatte rounded-full cursor-pointer"
     >
       A&ntilde;ade una imagen de tu experiencia
     </label>
-    <input id="image" type="file" accept="image/*" class="hidden">
-    
+    <input
+      id="photo"
+      type="file"
+      accept="image/*"
+      class="hidden"
+      @input="uploadImage"
+    />
+
+    <div
+      v-if="image"
+      class="flex justify-center items-center w-36 md:w-38 h-36 md:h-38 overflow-hidden rounded-2xl outline outline-4 outline-cosmicLatte"
+    >
+      <img :src="image" class="object-center" />
+    </div>
+
     <RateExperience />
 
-    <button 
+    <button
       type="button"
       class="self-center btn bg-cosmicLatte text-ruby w-3/12 rounded-full py-2 text-lg"
     >
@@ -37,14 +46,30 @@
 </template>
 
 <script>
-import Header from "../components/Header.vue"
-import RateExperience from "../components/RateExperience.vue"
+import Header from "../components/Header.vue";
+import RateExperience from "../components/RateExperience.vue";
 
 export default {
-  name: 'AddExperience',
+  name: "AddExperience",
   components: {
     Header,
     RateExperience,
   },
-}
+  data() {
+    return {
+      image: null,
+    };
+  },
+  methods: {
+    uploadImage(event) {
+      const file = event.target.files[0];
+      const reader = new FileReader();
+      reader.onload = (event) => {
+        this.image = event.target.result;
+      };
+
+      reader.readAsDataURL(file);
+    },
+  },
+};
 </script>
