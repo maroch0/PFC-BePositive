@@ -1,7 +1,7 @@
 <template>
   <Header />
   <form
-    class="w-full h-5/6 text-cosmicLatte flex flex-col justify-center items-center pb-56 space-y-6"
+    class="w-full text-cosmicLatte flex flex-col justify-center items-center space-y-6"
   >
     <div class="flex flex-col space-y-4">
       <label class="text-lg" for="experience"> Mi experiencia </label>
@@ -29,7 +29,7 @@
 
     <div
       v-if="image"
-      class="flex justify-center items-center w-36 md:w-38 h-36 md:h-38 overflow-hidden rounded-2xl outline outline-4 outline-cosmicLatte"
+      class="flex justify-center items-center w-36 h-36 overflow-hidden rounded-2xl outline outline-4 outline-cosmicLatte"
     >
       <img :src="image" class="object-center" />
     </div>

@@ -8,7 +8,7 @@
       <img
         src="src/assets/logo-bepositive.png"
         alt="BePositive logo"
-        class="2xl:w-3/4 xl:w-3/4 lg:w-2/4 md:w-2/4"
+        class="2xl:w-3/4 xl:w-2/4 lg:w-2/4"
       />
     </aside>
 
