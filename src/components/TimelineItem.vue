@@ -3,14 +3,18 @@
     <div
       v-for="(item, i) in data"
       :key="i"
-      :class='i % 2 ? "timeline-item left" : "timeline-item right"'
+      :class="i % 2 ? 'timeline-item left' : 'timeline-item right'"
     >
-      <article 
+      <article
         class="content text-cosmicLatte"
-        :class='i % 2 ? "flex flex-col justify-end items-end" : "flex flex-col justify-end items-start"'
+        :class="
+          i % 2
+            ? 'flex flex-col justify-end items-end'
+            : 'flex flex-col justify-end items-start'
+        "
       >
-        <h2 class="italic font-thin text-lg mb-1">{{item.date}}</h2>
-        <p class="leading-tight text-xl text-justify">{{item.description}}</p>
+        <h2 class="italic font-thin text-lg mb-1">{{ item.date }}</h2>
+        <p class="leading-tight text-xl text-justify">{{ item.description }}</p>
       </article>
     </div>
   </section>
@@ -19,12 +23,7 @@
 <script>
 export default {
   name: "TimelineItem",
-  data() {
-    return {
-      //data: experiences
-    };
-  },
-  props: ['data'],
+  props: ["data"],
 };
 </script>
 
@@ -39,7 +38,7 @@ export default {
   content: "";
   position: absolute;
   width: 2px;
-  background-color: #FFF8E8;
+  background-color: #fff8e8;
   top: 0;
   bottom: 0;
   left: 50%;
@@ -55,13 +54,13 @@ export default {
 .timeline-item::after {
   content: "";
   position: absolute;
-/* dot size */
+  /* dot size */
   width: 20px;
   height: 20px;
-/* vertical position dot par */
+  /* vertical position dot par */
   right: -9px;
-  
-  background-color: #FFF8E8;
+
+  background-color: #fff8e8;
   top: 35px;
   border-radius: 50%;
   z-index: 1;
