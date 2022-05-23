@@ -13,8 +13,16 @@
             : 'flex flex-col justify-end items-start'
         "
       >
-        <h2 class="italic font-thin text-lg mb-1">{{ item.date }}</h2>
-        <p class="leading-tight text-xl text-justify">{{ item.description }}</p>
+        <h2 class="italic font-thin text-lg">{{ item.date }}</h2>
+        <p class="leading-tight text-xl text-justify mb-2">
+          {{ item.description }}
+        </p>
+        <div
+          v-if="item.photo"
+          class="flex justify-center items-center w-28 h-28 overflow-hidden rounded-2xl outline outline-4 outline-cosmicLatte"
+        >
+          <img :src="item.photo" class="object-center" />
+        </div>
       </article>
     </div>
   </section>

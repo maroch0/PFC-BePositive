@@ -1,15 +1,13 @@
 <template>
   <Header />
-  <main
-    class="flex flex-col justify-center items-center space-y-8"
-  >
+  <main class="h-4/6 flex flex-col justify-center items-center space-y-8">
     <aside>
       <UpdateImage />
     </aside>
-    
+
     <UpdateProfileForm />
 
-    <button 
+    <button
       type="button"
       class="w-3/12 self-center btn bg-cosmicLatte text-ruby rounded-full py-2 text-xl md:text-lg"
     >
@@ -19,15 +17,15 @@
 </template>
 
 <script>
-import Header from '../components/Header.vue'
-import UpdateImage from '../components/UpdateImage.vue'
-import UpdateProfileForm from '../components/UpdateProfileForm.vue'
+import Header from "../components/Header.vue";
+import UpdateImage from "../components/UpdateImage.vue";
+import UpdateProfileForm from "../components/UpdateProfileForm.vue";
 export default {
-  name: 'UserProfile',
+  name: "UserProfile",
   components: {
     Header,
     UpdateImage,
     UpdateProfileForm,
-  }
-}
+  },
+};
 </script>
