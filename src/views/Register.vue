@@ -9,16 +9,16 @@
     </aside>
 
     <div class="w-full text-cosmicLatte flex justify-center items-center">
-      <RegisterForm />
-    </div>
-
-    <div class="w-full text-cosmicLatte flex justify-center items-center">
-      <p class="text-cosmicLatte">
+      <RegisterForm>
+        <slot>
+          <p class="text-cosmicLatte">
         ¿Ya tienes una cuenta?
         <router-link class="text-lg font-bold" :to="{ name: 'login' }">
           Inicia Sesi&oacute;n
         </router-link>
       </p>
+        </slot>
+      </RegisterForm>
     </div>
   </main>
 </template>

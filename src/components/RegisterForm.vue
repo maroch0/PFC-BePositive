@@ -72,13 +72,15 @@
         />
       </div>
     </div>
-    <div class="w-full flex justify-center items-center col-span-2">
+    <div class="w-full flex flex-col justify-center items-center col-span-2">
       <button
         type="button"
         class="btn bg-cosmicLatte text-intenseRose self-center w-2/5 text-2xl rounded-full py-2 mr-4"
       >
         Registrarse
       </button>
+
+      <slot />
     </div>
   </form>
 </template>

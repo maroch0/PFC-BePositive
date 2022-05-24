@@ -1,7 +1,7 @@
 <template>
   <Header />
   <form
-    class="w-full text-cosmicLatte flex flex-col justify-center items-center space-y-6"
+    class="w-full h-5/6 text-cosmicLatte flex flex-col justify-center items-center space-y-6"
   >
     <div class="flex flex-col space-y-4">
       <label class="text-lg" for="experience"> Mi experiencia </label>
