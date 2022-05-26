@@ -1,7 +1,7 @@
 <template>
   <Header />
   <main
-    class="md:h-4/6 lg:h-screen xl:h-5/6 flex flex-col justify-center items-center space-y-14 mt-10 pb-4 md:mt-6 xl:mt-0"
+    class="md:h-4/6 lg:h-screen xl:h-5/6 flex flex-col justify-center items-center space-y-10 mt-10 pb-4 md:mt-6 xl:mt-0"
   >
     <aside>
       <UpdateImage />
