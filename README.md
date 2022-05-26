@@ -1,4 +1,4 @@
-# Final project of the web application development course.
+# Final project of the web development course.
 
 ## Project summary:
 
@@ -6,10 +6,10 @@ Be Positive is a web application designed to improve mental health, in it, users
 
 ### Technologies used:
 
-Vue 3 + Vite
-HTML
-Tailwind CSS
-JavaScript
+- Vue 3 + Vite
+- HTML
+- Tailwind CSS
+- JavaScript
 
 ### To run the project
 
