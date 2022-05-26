@@ -1,5 +1,5 @@
 <template>
-  <section class="timeline">
+  <article class="timeline">
     <div
       v-for="(item, i) in data"
       :key="i"
@@ -9,7 +9,7 @@
         class="content text-cosmicLatte"
         :class="
           i % 2
-            ? 'flex flex-col justify-end items-end'
+            ? 'md:flex flex-col md:justify-end md:items-end'
             : 'flex flex-col justify-end items-start'
         "
       >
@@ -25,7 +25,7 @@
         </div>
       </article>
     </div>
-  </section>
+  </article>
 </template>
 
 <script>

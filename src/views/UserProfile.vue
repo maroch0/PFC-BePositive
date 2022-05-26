@@ -1,18 +1,13 @@
 <template>
   <Header />
-  <main class="h-4/6 flex flex-col justify-center items-center space-y-8">
+  <main
+    class="md:h-4/6 lg:h-screen xl:h-5/6 flex flex-col justify-center items-center space-y-14 mt-10 pb-4 md:mt-6 xl:mt-0"
+  >
     <aside>
       <UpdateImage />
     </aside>
 
     <UpdateProfileForm />
-
-    <button
-      type="button"
-      class="w-3/12 self-center btn bg-cosmicLatte text-ruby rounded-full py-2 text-xl md:text-lg"
-    >
-      Actualizar Perfil
-    </button>
   </main>
 </template>
 

@@ -1,15 +1,14 @@
 <template>
-  <div class="flex flex-col justify-center items-center space-y-4">
-    <!-- Relacionar la imagen que se añade en el input con la que se muestra -->
+  <div class="flex flex-col justify-center items-center space-y-4 xl:space-y-0">
     <div
-      class="flex justify-center items-center w-44 md:w-38 h-44 md:h-38 overflow-hidden rounded-fifty outline outline-4 outline-cosmicLatte"
+      class="flex justify-center items-center w-28 h-28 md:w-38 md:h-38 lg:w-48 lg:h-48 overflow-hidden rounded-fifty outline outline-4 outline-cosmicLatte"
     >
       <img :src="image" class="object-center" />
     </div>
 
     <label
       for="image"
-      class="w-full text-center text-lg md:text-base text-cosmicLatte cursor-pointer"
+      class="w-full text-center text-base md:text-lg text-cosmicLatte cursor-pointer"
     >
       Actualizar fotograf&iacute;a
     </label>

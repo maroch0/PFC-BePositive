@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex flex-col relative border-r border-cosmicLatte dark:border-cosmicLatte"
+    class="flex xl:flex-col justify-center items-center xl:relative xl:border-r border-cosmicLatte dark:border-cosmicLatte"
   >
     <div v-for="(year, index) in years" :key="index">
       <!-- Raya -->
@@ -8,14 +8,18 @@
         <!-- Bolita -->
         <div v-if="selected && yearSelect === year">
           <div
-            class="absolute w-4 h-4 bg-cosmicLatte rounded-full mt-2 -right-2 border border-cosmicLatte dark:border-cosmicLatte dark:bg-cosmicLatte"
+            class="xl:absolute xl:w-4 xl:h-4 bg-cosmicLatte xl:rounded-full mt-2 xl:-right-2 border border-cosmicLatte dark:border-cosmicLatte dark:bg-cosmicLatte"
           ></div>
         </div>
-        <button type="button" class="w-full" @click="yearSelected(index)">
+        <button
+          type="button"
+          class="w-full flex justify-center content-center"
+          @click="yearSelected(index)"
+        >
           <p
             class="text-xl text-cosmicLatte dark:text-cosmicLatte"
             :class="{
-              'text-3xl': yearSelect === year
+              'text-3xl': yearSelect === year,
             }"
           >
             {{ year }}
@@ -28,24 +32,24 @@
 
 <script>
 export default {
-  name: 'YearMenu',
+  name: "YearMenu",
   data() {
     return {
       yearSelect: undefined,
-      selected: false
-    }
+      selected: false,
+    };
   },
-  props: ['years'],
+  props: ["years"],
   created() {
-    this.yearSelect = this.years[0]
-    this.selected = true
+    this.yearSelect = this.years[0];
+    this.selected = true;
   },
   methods: {
     yearSelected(index) {
-      this.yearSelect = this.years[index]
-      this.selected = true
-      this.$emit('changeYear', this.yearSelect)
-    }
-  }
-}
+      this.yearSelect = this.years[index];
+      this.selected = true;
+      this.$emit("changeYear", this.yearSelect);
+    },
+  },
+};
 </script>

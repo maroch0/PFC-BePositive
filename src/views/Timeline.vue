@@ -1,12 +1,14 @@
 <template>
   <Header />
 
-  <section class="flex h-5/6 overflow-hidden">
-    <aside class="w-2/6 flex justify-center items-center">
+  <section class="flex flex-col xl:flex-row h-5/6 overflow-hidden">
+    <aside
+      class="lg:w-full xl:w-2/6 flex justify-center items-center overflow-auto"
+    >
       <YearMenu :years="years" v-on:changeYear="changeYearSelected" />
     </aside>
 
-    <article class="w-4/6 h-full overflow-auto">
+    <article class="w-full h-full xl:w-4/6 overflow-auto">
       <TimelineItem :data="experiences" />
     </article>
   </section>

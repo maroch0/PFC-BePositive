@@ -1,10 +1,12 @@
 <template>
-  <main class="h-screen flex flex-col justify-center items-center space-y-28">
-    <aside class="flex justify-center">
+  <main
+    class="h-full lg:h-screen flex flex-col justify-center items-center space-y-8 md:space-y-28 lg:space-y-10"
+  >
+    <aside class="flex justify-center mt-4 md:mt-8 2xl:mt-0">
       <img
         src="src/assets/logo-bepositive.png"
         alt="BePositive logo"
-        class="2xl:w-3/4 xl:w-2/4 lg:w-2/4"
+        class="w-4/6 md:w-3/5 xl:w-3/4 2xl:w-full"
       />
     </aside>
 
@@ -12,11 +14,11 @@
       <RegisterForm>
         <slot>
           <p class="text-cosmicLatte">
-        ¿Ya tienes una cuenta?
-        <router-link class="text-lg font-bold" :to="{ name: 'login' }">
-          Inicia Sesi&oacute;n
-        </router-link>
-      </p>
+            ¿Ya tienes una cuenta?
+            <router-link class="text-lg font-bold" :to="{ name: 'login' }">
+              Inicia Sesi&oacute;n
+            </router-link>
+          </p>
         </slot>
       </RegisterForm>
     </div>

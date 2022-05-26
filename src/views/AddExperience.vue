@@ -1,9 +1,9 @@
 <template>
   <Header />
   <form
-    class="w-full h-5/6 text-cosmicLatte flex flex-col justify-center items-center space-y-6"
+    class="h-5/6 lg:h-screen xl:h-5/6 text-cosmicLatte flex flex-col justify-center items-center px-4 pb-4 space-y-6"
   >
-    <div class="flex flex-col space-y-4">
+    <div class="w-full md:w-2/4 xl:w-1/4 flex flex-col space-y-4">
       <label class="text-lg" for="experience"> Mi experiencia </label>
       <textarea
         id="experience"
@@ -15,7 +15,7 @@
 
     <label
       for="photo"
-      class="w-3/12 text-center py-2 outline outline-cosmicLatte rounded-full cursor-pointer"
+      class="w-full md:w-2/4 xl:w-3/12 text-center py-2 outline outline-cosmicLatte rounded-full cursor-pointer"
     >
       A&ntilde;ade una imagen de tu experiencia
     </label>
@@ -29,7 +29,7 @@
 
     <div
       v-if="image"
-      class="flex justify-center items-center w-36 h-36 overflow-hidden rounded-2xl outline outline-4 outline-cosmicLatte"
+      class="flex justify-center items-center w-28 h-28 md:w-36 md:h-36 overflow-hidden rounded-2xl outline outline-4 outline-cosmicLatte"
     >
       <img :src="image" class="object-center" />
     </div>
@@ -38,7 +38,7 @@
 
     <button
       type="button"
-      class="self-center btn bg-cosmicLatte text-ruby w-3/12 rounded-full py-2 text-lg"
+      class="w-full md:w-2/4 xl:w-3/12 self-center btn bg-cosmicLatte text-ruby rounded-full py-2 text-lg"
     >
       Conservar experiencia
     </button>

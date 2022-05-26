@@ -1,6 +1,6 @@
 <template>
-  <form class="w-2/4 flex flex-col space-y-14 text-cosmicLatte">
-    <div class="md:w-full flex flex-col space-y-4">
+  <form class="w-5/6 lg:w-2/4 flex flex-col space-y-14 text-cosmicLatte">
+    <div class="flex flex-col space-y-4">
       <label for="email" class="text-2xl"> Correo Electr&oacute;nico </label>
       <input
         type="email"
@@ -10,7 +10,7 @@
       />
     </div>
 
-    <div class="md:w-full flex flex-col space-y-4">
+    <div class="flex flex-col space-y-4">
       <label for="pass" class="text-2xl"> Contrase&ntilde;a </label>
       <input
         type="password"
