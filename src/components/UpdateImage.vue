@@ -1,7 +1,5 @@
 <template>
-  <div
-    class="flex flex-col justify-center items-center space-y-4 xl:space-y-0 mt-4"
-  >
+  <div class="flex flex-col justify-center items-center space-y-4 mt-4">
     <div
       class="flex justify-center items-center w-28 h-28 md:w-40 md:h-40 lg:w-44 lg:h-44 overflow-hidden rounded-fifty outline outline-4 outline-cosmicLatte"
     >
