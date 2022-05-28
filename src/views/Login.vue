@@ -1,5 +1,8 @@
 <template>
-  <main class="flex h-full lg:h-screen">
+  <main
+    id="screen-size"
+    class="h-screen md:h-full lg:h-screen xl:h-screen flex overflow-auto overscroll-auto"
+  >
     <aside class="hidden lg:w-2/4 lg:flex lg:items-center">
       <img
         src="src/assets/timeline-login.png"

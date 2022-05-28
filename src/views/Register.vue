@@ -1,6 +1,7 @@
 <template>
   <main
-    class="h-full lg:h-screen flex flex-col justify-center items-center space-y-8 md:space-y-28 lg:space-y-10"
+    id="screen-size"
+    class="flex flex-col justify-center items-center space-y-8 md:space-y-28 lg:space-y-10 2xl:pt-12"
   >
     <aside class="flex justify-center mt-4 md:mt-8 2xl:mt-0">
       <img

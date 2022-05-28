@@ -1,7 +1,5 @@
 <template>
-  <form
-    class="w-5/6 md:w-3/6 lg:w-2/5 xl:w-2/6 text-cosmicLatte flex flex-col justify-center space-y-6 xl:space-y-4"
-  >
+  <form class="w-full text-cosmicLatte flex flex-col justify-center space-y-6">
     <label for="name" class="text-xl"> Nombre </label>
     <input
       type="text"

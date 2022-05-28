@@ -9,9 +9,13 @@
         />
       </div>
 
-      <nav class="flex space-x-6 md:mr-4 lg:mr-0">
+      <nav class="flex justify-end space-x-6 md:mr-4 lg:mr-0 self-center">
         <router-link
           class="text-base md:text-lg text-cosmicLatte self-center"
+          :class="{
+            'border-none': path !== '/user',
+            'border-b-4 border-cosmicLatte text-cosmicLatte': path === '/user',
+          }"
           :to="{ name: 'user' }"
         >
           Hola, Nombre
@@ -19,6 +23,11 @@
 
         <router-link
           class="text-base md:text-lg text-cosmicLatte self-center"
+          :class="{
+            'border-none': path !== '/timeline',
+            'border-b-4 border-cosmicLatte text-cosmicLatte':
+              path === '/timeline',
+          }"
           :to="{ name: 'timeline' }"
         >
           Timeline
@@ -34,6 +43,13 @@
           :to="{ name: 'experience' }"
         >
           A&ntilde;adir experiencia
+        </router-link>
+
+        <router-link
+          class="hidden w-1/12 lg:flex self-center"
+          :to="{ name: 'login' }"
+        >
+          <img src="src/assets/logout.png" alt="logout icon" class="w-4/6" />
         </router-link>
       </nav>
     </div>
