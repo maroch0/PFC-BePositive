@@ -47,7 +47,7 @@ export default {
           {
             date: "01-03-2022",
             description: "¡He sido tia!",
-            photo: "src/assets/profile-img.png",
+            photo: "/src/assets/profile-img.png",
           },
           {
             date: "19-04-2022",
@@ -65,7 +65,7 @@ export default {
           {
             date: "01-01-2021",
             description: "Un nuevo año me espera.",
-            photo: "src/assets/profile-img.png",
+            photo: "/src/assets/profile-img.png",
           },
           {
             date: "13-02-2021",
@@ -80,7 +80,7 @@ export default {
           {
             date: "19-04-2021",
             description: "Me han ascendido en el trabajo.",
-            photo: "src/assets/profile-img.png",
+            photo: "/src/assets/profile-img.png",
           },
           {
             date: "27-05-2021",
@@ -95,7 +95,7 @@ export default {
           {
             date: "24-07-2021",
             description: "Me siento genial.",
-            photo: "src/assets/profile-img.png",
+            photo: "/src/assets/profile-img.png",
           },
           {
             date: "08-08-2021",
@@ -127,7 +127,7 @@ export default {
           {
             date: "01-03-2020",
             description: "Adoptamos un perrito.",
-            photo: "src/assets/profile-img.png",
+            photo: "/src/assets/profile-img.png",
           },
           {
             date: "19-04-2020",
@@ -152,7 +152,7 @@ export default {
           {
             date: "08-08-2020",
             description: "Termine de leer mi nuevo libro y es una pasada.",
-            photo: "src/assets/profile-img.png",
+            photo: "/src/assets/profile-img.png",
           },
           {
             date: "26-10-2020",
@@ -167,14 +167,14 @@ export default {
           {
             date: "09-12-2020",
             description: "Sofa, manta y Netflix.",
-            photo: "src/assets/profile-img.png",
+            photo: "/src/assets/profile-img.png",
           },
         ],
         [
           {
             date: "13-02-2019",
             description: "Cena en el restaurante de nuestra primera cita.",
-            photo: "src/assets/profile-img.png",
+            photo: "/src/assets/profile-img.png",
           },
           {
             date: "01-03-2019",
@@ -200,7 +200,7 @@ export default {
           {
             date: "24-07-2019",
             description: "He quedado a comer con mi hermana.",
-            photo: "src/assets/profile-img.png",
+            photo: "/src/assets/profile-img.png",
           },
           {
             date: "08-08-2019",
@@ -239,7 +239,7 @@ export default {
           {
             date: "14-06-2018",
             description: "Por fin se estreno la pelicula que queria ver.",
-            photo: "src/assets/profile-img.png",
+            photo: "/src/assets/profile-img.png",
           },
           {
             date: "24-07-2018",
@@ -254,7 +254,7 @@ export default {
           {
             date: "26-10-2018",
             description: "Me encanta mi nuevo peinado.",
-            photo: "src/assets/profile-img.png",
+            photo: "/src/assets/profile-img.png",
           },
           {
             date: "03-11-2018",

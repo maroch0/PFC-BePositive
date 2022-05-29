@@ -5,7 +5,7 @@
   >
     <aside class="flex justify-center mt-4 md:mt-8 2xl:mt-0">
       <img
-        src="src/assets/logo-bepositive.png"
+        src="/src/assets/logo-bepositive.png"
         alt="BePositive logo"
         class="w-4/6 md:w-3/5 xl:w-3/4 2xl:w-full"
       />

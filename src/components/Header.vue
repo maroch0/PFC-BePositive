@@ -3,7 +3,7 @@
     <div class="w-full lg:w-11/12 flex justify-around md:justify-between mt-4">
       <div class="hidden md:block md:w-1/4">
         <img
-          src="src/assets/logo-bepositive.png"
+          src="/src/assets/logo-bepositive.png"
           alt="BePositive logo"
           class="w-6/12 ml-4 lg:ml-0"
         />
@@ -49,7 +49,7 @@
           class="hidden w-1/12 lg:flex self-center"
           :to="{ name: 'login' }"
         >
-          <img src="src/assets/logout.png" alt="logout icon" class="w-4/6" />
+          <img src="/src/assets/logout.png" alt="logout icon" class="w-4/6" />
         </router-link>
       </nav>
     </div>
