@@ -27,7 +27,7 @@ export default {
   name: "UpdateImage",
   data() {
     return {
-      image: "src/assets/profile-img.png",
+      image: "../src/assets/profile-img.png",
     };
   },
   methods: {
