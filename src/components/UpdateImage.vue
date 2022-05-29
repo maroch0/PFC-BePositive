@@ -23,11 +23,13 @@
 </template>
 
 <script>
+import avatar from "../assets/profile-img.png";
+
 export default {
   name: "UpdateImage",
   data() {
     return {
-      image: "../src/assets/profile-img.png",
+      image: avatar,
     };
   },
   methods: {
